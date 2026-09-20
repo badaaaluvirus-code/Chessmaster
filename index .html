@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessMaster.io - Play Chess Online</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1><i class="fas fa-chess-knight"></i> ChessMaster.io</h1>
+            <div class="lobby-controls">
+                <select id="game-mode">
+                    <option value="bot">Play vs AI Bot</option>
+                    <option value="local">2-Player Local</option>
+                </select>
+                <select id="time-control">
+                    <option value="60">1 Min (Bullet)</option>
+                    <option value="180">3 Min (Blitz)</option>
+                    <option value="600" selected>10 Min (Rapid)</option>
+                    <option value="unlimited">Unlimited</option>
+                </select>
+                <button id="start-btn"><i class="fas fa-play"></i> Start Match</button>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <!-- Opponent Panel -->
+            <div class="player-panel opponent">
+                <div class="player-info">
+                    <img src="https://unsplash.com" class="avatar" alt="Opponent">
+                    <div>
+                        <span id="opp-name">Stockfish Bot</span>
+                        <span class="elo-tag">ELO <span id="opp-elo">1500</span></span>
+                    </div>
+                </div>
+                <div id="opp-timer" class="chess-clock">10:00</div>
+            </div>
+
+            <!-- The Evaluation Bar & Chessboard Layout -->
+            <div class="board-area">
+                <div class="evaluation-bar"><div id="eval-juice"></div></div>
+                <div id="chessboard" class="board-grid"></div>
+            </div>
+
+            <!-- Player Panel -->
+            <div class="player-panel user">
+                <div class="player-info">
+                    <img src="https://unsplash.com" class="avatar" alt="User">
+                    <div>
+                        <span>You (Player 1)</span>
+                        <span class="elo-tag">ELO <span id="user-elo">1200</span></span>
+                    </div>
+                </div>
+                <div id="user-timer" class="chess-clock">10:00</div>
+            </div>
+        </div>
+
+        <!-- Sidebar for Move Quality Feedback -->
+        <div class="sidebar">
+            <h3><i class="fas fa-magnifying-glass-chart"></i> Move Analysis</h3>
+            <div id="evaluation-badge" class="badge book">Book Move</div>
+            <div class="move-log-box">
+                <ul id="move-list">
+                    <li>Game hasn't started yet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
