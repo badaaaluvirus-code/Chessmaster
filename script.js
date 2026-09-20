@@ -1,19 +1,18 @@
-// High Quality Standard Pieces Mapping
+// High Quality Standard Pieces Mapping (Updated CDN Links)
 const piecesConfig = {
-    'r': 'https://wikimedia.org',
-    'n': 'https://wikimedia.org',
-    'b': 'https://wikimedia.org',
-    'q': 'https://wikimedia.org',
-    'k': 'https://wikimedia.org',
-    'p': 'https://wikimedia.org',
-    'R': 'https://wikimedia.org',
-    'N': 'https://wikimedia.org',
-    'B': 'https://wikimedia.org',
-    'Q': 'https://wikimedia.org',
-    'K': 'https://wikimedia.org',
-    'P': 'https://wikimedia.org'
+    'r': 'https://chessboardjs.com',
+    'n': 'https://chessboardjs.com',
+    'b': 'https://chessboardjs.com',
+    'q': 'https://chessboardjs.com',
+    'k': 'https://chessboardjs.com',
+    'p': 'https://chessboardjs.com',
+    'R': 'https://chessboardjs.com',
+    'N': 'https://chessboardjs.com',
+    'B': 'https://chessboardjs.com',
+    'Q': 'https://chessboardjs.com',
+    'K': 'https://chessboardjs.com',
+    'P': 'https://chessboardjs.com'
 };
-
 const initialBoardSetup = [
     ['r','n','b','q','k','b','n','r'],
     ['p','p','p','p','p','p','p','p'],
